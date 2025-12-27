@@ -37,3 +37,6 @@ I specialize in:
 
 ## GitHub Pages
 👉 https://Ahmed-Galal85.github.io
+
+## LinkedIn
+👉 https://www.linkedin.com/in/ahmed-galal85/
