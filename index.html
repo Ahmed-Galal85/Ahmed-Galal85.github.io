@@ -1,126 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ahmed Galal | Team Leader & Software Architect</title>
-    <meta name="description" content="Ahmed Galal - Team Leader, Senior Software Developer, System Architect">
-    <style>
-        body {
-            font-family: system-ui, Arial;
-            background: #f9f9f9;
-            color: #222;
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px;
-            line-height: 1.7;
-        }
-        h1, h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 6px;
-        }
-        .tag {
-            display: inline-block;
-            background: #eee;
-            padding: 5px 10px;
-            margin: 4px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Ahmed Galal | Software Architect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        font-family: system-ui, Arial;
+        background: #0f172a;
+        color: #e5e7eb;
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px;
+        line-height: 1.8;
+    }
+    h1, h2 {
+        border-bottom: 1px solid #334155;
+        padding-bottom: 8px;
+        color: #f8fafc;
+    }
+    .lang-switch {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+    button {
+        background: #1e293b;
+        color: #e5e7eb;
+        border: 1px solid #334155;
+        padding: 6px 14px;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-left: 5px;
+    }
+    .tag {
+        display: inline-block;
+        background: #1e293b;
+        padding: 6px 12px;
+        margin: 5px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .section {
+        margin-bottom: 45px;
+    }
+    .ar {
+        direction: rtl;
+        text-align: right;
+        display: none;
+    }
+</style>
+
+<script>
+function switchLang(lang) {
+    document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+    document.querySelector('.ar').style.display = lang === 'ar' ? 'block' : 'none';
+}
+</script>
 </head>
+
 <body>
 
+<div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('ar')">العربية</button>
+</div>
+
+<!-- ================= ENGLISH ================= -->
+<div class="en">
+
 <h1>Ahmed Galal</h1>
-<p><strong>Team Leader · Senior Software Developer · System Architect</strong></p>
-<p>📍 Egypt</p>
+<p><strong>Team Leader · Senior Software Developer · Software Architect</strong><br>📍 Egypt</p>
 
 <div class="section">
-<h2>About Me</h2>
+<h2>Who I Really Am</h2>
 <p>
-Software Engineer with over 15 years of hands-on experience building, fixing,
-and scaling real-world systems. I started my career in technical support,
-quickly moved into development, and eventually became the person teams go to
-when systems break, scale fails, or architecture needs rethinking.
+I am not a framework chaser.  
+I am a systems engineer who has spent more than 15 years inside real production systems —
+watching them grow, rot, collapse, and occasionally survive.
 </p>
-
 <p>
-I specialize in transforming chaotic, legacy, or poorly-designed systems into
-structured, scalable, and maintainable platforms. I don’t just write code —
-I design systems that survive growth.
+My career started in technical support, where I learned how systems fail in the hands of real users.
+That experience shaped everything I do today: I design software assuming it *will* be misused,
+scaled badly, and pushed beyond its original purpose.
 </p>
 </div>
 
 <div class="section">
-<h2>Core Expertise</h2>
+<h2>What I Specialize In</h2>
 <span class="tag">.NET Core / MVC / EF</span>
 <span class="tag">Angular</span>
 <span class="tag">Flutter</span>
 <span class="tag">PostgreSQL</span>
 <span class="tag">SQL Server</span>
-<span class="tag">System Design</span>
-<span class="tag">Clean Architecture</span>
+<span class="tag">System Architecture</span>
 <span class="tag">Multi-Tenant Systems</span>
-<span class="tag">Docker</span>
-<span class="tag">Kubernetes</span>
+<span class="tag">Docker & Kubernetes</span>
 <span class="tag">API Gateway</span>
 </div>
 
 <div class="section">
-<h2>What I Actually Do</h2>
+<h2>The Problems I’m Brought In To Fix</h2>
 <ul>
-    <li>Design scalable backend architectures for enterprise systems</li>
-    <li>Lead teams and review code with architectural mindset</li>
-    <li>Refactor legacy databases and fix catastrophic normalization issues</li>
-    <li>Build POS, WFM, forecasting, and reporting-heavy systems</li>
-    <li>Bridge the gap between business logic and technical implementation</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Key Projects & Experience</h2>
-<ul>
-    <li>
-        <strong>Workforce Management System (WFM)</strong><br>
-        Large-scale system with forecasting, reporting, scheduling,
-        performance tracking, and ML integration.
-    </li>
-    <li>
-        <strong>Flutter POS Dual-Screen System</strong><br>
-        Real-time customer display, Kotlin MethodChannels,
-        hardware integration, and performance optimization.
-    </li>
-    <li>
-        <strong>Call Forecasting System</strong><br>
-        Predictive models using ML.NET + Python integration
-        with dynamic data structures.
-    </li>
-    <li>
-        <strong>Enterprise Legacy Refactoring</strong><br>
-        Restructuring broken databases, untangling business logic,
-        and rebuilding architecture from the ground up.
-    </li>
+    <li>Databases with catastrophic normalization issues</li>
+    <li>Legacy systems nobody dares to touch</li>
+    <li>Business logic scattered across UI, backend, and reports</li>
+    <li>Systems that work… until real growth starts</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>Engineering Philosophy</h2>
 <p>
-Bad systems don’t fail suddenly — they leak silently.
-I focus on exposing hidden complexity, blind spots,
-and architectural lies before they turn into production disasters.
+Most software fails quietly.  
+Not because of bugs — but because of bad assumptions made early.
+</p>
+<p>
+My job is to expose those assumptions, redesign the system,
+and leave behind something that future engineers won’t curse my name for.
 </p>
 </div>
 
 <div class="section">
 <h2>Contact</h2>
 <p>
+GitHub: <a href="https://github.com/Ahmed-Galal85">Ahmed-Galal85</a><br>
+GitHub Pages: https://Ahmed-Galal85.github.io
+</p>
+</div>
+
+</div>
+
+<!-- ================= ARABIC ================= -->
+<div class="ar">
+
+<h1>أحمد جلال</h1>
+<p><strong>قائد فريق · مهندس برمجيات أول · معماري أنظمة</strong><br>📍 مصر</p>
+
+<div class="section">
+<h2>أنا مين بجد</h2>
+<p>
+أنا مش مطارد فريم ووركات.  
+أنا مهندس أنظمة قضى أكتر من 15 سنة جوه أنظمة شغالة بجد —
+شفتها وهي بتكبر، وتتعفن، وتقع، وأحيانًا تنجو.
+</p>
+<p>
+بدايتي كانت في الدعم الفني، وهناك اتعلمت إزاي المستخدم الحقيقي
+يقدر يكسر أي نظام متصمم بنظريات حلوة بس.
+وده اللي شكّل تفكيري الهندسي بالكامل.
+</p>
+</div>
+
+<div class="section">
+<h2>مجالات خبرتي الأساسية</h2>
+<span class="tag">.NET Core</span>
+<span class="tag">Angular</span>
+<span class="tag">Flutter</span>
+<span class="tag">PostgreSQL</span>
+<span class="tag">SQL Server</span>
+<span class="tag">هندسة الأنظمة</span>
+<span class="tag">Multi-Tenant</span>
+<span class="tag">Docker & Kubernetes</span>
+</div>
+
+<div class="section">
+<h2>المشاكل اللي عادةً بتتجابلي</h2>
+<ul>
+    <li>داتا بيزات مدمّرة من كتر التكرار وسوء التصميم</li>
+    <li>أنظمة قديمة الكل خايف يقربلها</li>
+    <li>منطق شغل متبعثر بين الواجهة والتقارير والسيرفر</li>
+    <li>أنظمة بتشتغل… لحد ما المستخدمين يزيدوا</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>فلسفتي الهندسية</h2>
+<p>
+معظم الأنظمة لا تفشل فجأة.  
+هي بتموت ببطء… بسبب افتراضات غلط من البداية.
+</p>
+<p>
+دوري إني أطلع الافتراضات دي للنور،
+وأعيد بناء النظام بشكل يخليه يعيش أطول منّي.
+</p>
+</div>
+
+<div class="section">
+<h2>التواصل</h2>
+<p>
+GitHub: Ahmed-Galal85<br>
+GitHub Pages: Ahmed-Galal85.github.io
+</p>
 GitHub: <a href="https://github.com/Ahmed-Galal85">github.com/Ahmed-Galal85</a><br>
 LinkedIn: <a href="https://www.linkedin.com/in/ahmed-galal85/">https://www.linkedin.com/in/ahmed-galal85</a><br>
-</p>
+</div>
+
 </div>
 
 </body>
 </html>
+
+
+
